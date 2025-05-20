@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERBID — Побеждаем в тендерах</title>
+    <style>
+        /* Сброс стандартных стилей */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Основные цвета */
+        :root {
+            --primary-blue: #0072b5;
+            --white: #ffffff;
+            --black: #000000;
+        }
+
+        /* Шапка */
+        header {
+            background: var(--primary-blue);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            color: var(--white);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Герой-секция */
+        .hero {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Секция "Услуги" */
+        .services {
+            padding: 50px 20px;
+            background: var(--white);
+        }
+
+        .service-card {
+            border: 2px solid var(--primary-blue);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Кнопки */
+        .btn {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="logo">INTERBID</div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <h1>Побеждаем в тендерах — вы фокусируйтесь на бизнесе</h1>
+        <p>95% успешных заявок. Полное сопровождение от поиска тендера до исполнения контракта.</p>
+        <button class="btn">Оставить заявку</button>
+    </section>
+
+    <!-- Секция "Услуги" -->
+    <section class="services">
+        <div class="service-card">
+            <h2>Тендерное сопровождение</h2>
+            <p>Поиск, подготовка документов, юридическая экспертиза.</p>
+            <button class="btn">Подробнее</button>
+        </div>
+        <div class="service-card">
+            <h2>Проектная поддержка</h2>
+            <p>Реализация госзаказов и коммерческих проектов.</p>
+            <button class="btn">Подробнее</button>
+        </div>
+    </section>
+
+    <!-- Скрипты -->
+    <script>
+        // Пример обработки клика по кнопке
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Форма заявки скоро появится!');
+            });
+        });
+    </script>
+</body>
+</html>
